@@ -1,10 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  const [registerError, setRegisterError] = useState("");
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -15,7 +16,16 @@ const Register = () => {
     const email = form.get("email");
     const password = form.get("password");
 
+    setRegisterError("");
+
     console.log("From register page: ", name, email);
+
+    if (!/^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)) {
+      setRegisterError(
+        "Password is invalid. It must have at least 6 characters, one uppercase letter, and one special character."
+      );
+      return;
+    }
 
     createUser(email, password)
       .then((result) => {
@@ -90,9 +100,11 @@ const Register = () => {
               required
             />
             <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
-                Forgot password?
-              </a>
+              {registerError && (
+                <p className="text-sm text-red-400 font-medium text-center">
+                  {registerError}
+                </p>
+              )}
             </label>
           </div>
 
