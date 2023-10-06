@@ -1,10 +1,35 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
+    const {loggedIn} = useContext(AuthContext);
+
+
+    const handleSignIn = e =>{
+        e.preventDefault();
+    const form = new FormData(e.currentTarget);
+
+    const email = form.get("email");
+    const password = form.get("password");
+
+    console.log("From login page: ",  email,password);
+
+    loggedIn(email,password)
+    .then(result =>{
+        console.log(result.user);
+    })
+    .catch(error =>{
+        console.log(error);
+    })
+    }
+
+
+
   return (
     <div>
       <div className="card">
-        <form className="card-body">
+        <form className="card-body" onSubmit={handleSignIn}>
 
 {/* email input field ================  */}
           <div className="form-control">
