@@ -34,7 +34,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <Link to='/' className="text-2xl font-bold normal-case ">𝑀𝒶𝒹𝑒_𝒾𝓃_𝒽𝑒𝒶𝓋𝑒𝓃</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -50,15 +50,19 @@ const Navbar = () => {
                                 <label tabIndex={0} >
                                     <img className="w-14 h-14 rounded-full" src={user.photoURL} alt="user profile pic" />
                                 </label>
-                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                                <button onClick={handleLogOut} className="btn btn-info w-2/3 mx-auto">Log Out</button>
+                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-56">
+                                    <li>Profile name: {user.displayName}</li>
+                                   <li>
+                                    <button onClick={handleLogOut} className="btn bg-[#f96e85] text-lg text-white font-semibold normal-case w-2/3 mx-auto">Log Out</button>
+                                    </li>
+                                
                                 </ul>
                             </div>
                             
                             
                         </div>
                         :
-                        <Link className="btn btn-outline btn-info" to='/login'>Login</Link>
+                        <Link className="btn bg-[#f96e85] text-lg text-white font-semibold normal-case" to='/login'>Login</Link>
                     }
                 </div>
             </div>
