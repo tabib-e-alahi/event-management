@@ -8,6 +8,7 @@ import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import Gallery from "../pages/Gallery/Gallery";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import About from "../pages/About/About";
+import Blog from "../pages/Blog";
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
             path:'/gallery',
             element: <PrivetRoute><Gallery></Gallery></PrivetRoute>,
             loader: () => fetch('gallery.json')
+        },
+        {
+            path:'/blog',
+            element: <PrivetRoute><Blog></Blog></PrivetRoute>,
+         
         },
     ]
   },

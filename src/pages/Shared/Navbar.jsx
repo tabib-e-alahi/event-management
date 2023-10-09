@@ -35,6 +35,11 @@ const Navbar = () => {
               Gallery
             </NavLink>
           </li>
+          <li>
+            <NavLink className="text-lg font-medium" to="/blog">
+              Blog
+            </NavLink>
+          </li>
         </>
       )}
     </>
