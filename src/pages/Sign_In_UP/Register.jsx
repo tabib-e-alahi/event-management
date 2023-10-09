@@ -55,18 +55,11 @@ const Register = () => {
   };
 
   return (
-    <div className="flex justify-between  items-center rounded-2xl mb-20 max-w-7xl mx-auto">
-      <div className="">
-        <h1 className="text-5xl text-left font-bold text-[#fa536f]">
-        Maid_in_Heaven
-        </h1>
-        <p className="text-2xl text-left font-medium text-[#FF99AA]">
-          Connect with us to turn visions into reality
-        </p>
-      </div>
+    <div className=" rounded-2xl mb-20 max-w-7xl mx-auto">
+     
 
-      <div className="flex-1 flex justify-end ">
-        <div className="card login-style bg-[#dededa] w-2/3 mt-16 shadow-lg shadow-slate-400">
+      <div className=" px-8 lg:px-0">
+        <div className="card login-style bg-[#dededa] lg:w-2/5 mx-auto mt-16 shadow-lg shadow-slate-400">
           <div className="card-body flex-none ">
            <SocialLinks></SocialLinks>
 

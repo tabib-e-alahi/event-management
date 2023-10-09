@@ -45,7 +45,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="p-5">
+    <div className="p-2 lg:p-5">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -74,7 +74,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="">
-            <img className="w-2/5" src={logo} alt="" />
+            <img className="w-52 lg:w-2/5" src={logo} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
