@@ -36,25 +36,28 @@ const Register = () => {
         })
           .then((result) => {
             console.log(result.user);
+           
           })
           .catch((error) => console.log(error));
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        setRegisterError(error.message)
+      });
   };
 
   return (
-    <div className="flex justify-between items-center rounded-2xl mb-20">
+    <div className="flex justify-between  items-center rounded-2xl mb-20 max-w-7xl mx-auto">
       <div className="">
         <h1 className="text-5xl text-left font-bold text-[#fa536f]">
-        𝑀𝒶𝒹𝑒_𝒾𝓃_𝒽𝑒𝒶𝓋𝑒𝓃
+        Maid_in_Heaven
         </h1>
         <p className="text-2xl text-left font-medium text-[#FF99AA]">
           Connect with us to turn visions into reality
         </p>
       </div>
 
-      <div className="flex-1 flex justify-end">
-        <div className="card login-style w-2/3 mt-20 shadow-lg shadow-slate-400">
+      <div className="flex-1 flex justify-end ">
+        <div className="card login-style bg-[#dededa] w-2/3 mt-16 shadow-lg shadow-slate-400">
           <div className="card-body flex-none ">
            <SocialLinks></SocialLinks>
 
@@ -132,7 +135,7 @@ const Register = () => {
               </div>
             </form>
             <p className="text-center">
-              <span className="font-semibold">New Here?</span>
+              <span className="font-semibold">Already have an account?</span>
               <Link className="btn btn-link normal-case" to="/login">
                 Login
               </Link>

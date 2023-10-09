@@ -1,31 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.login-style{
-    
- 
-   
-    
-     background: rgb(250,213,218);
-    background: radial-gradient(circle, rgba(250,213,218,1) 0%, rgb(255, 156, 176) 100%);
- 
- 
-}
-
-
-
 body{
-    padding-bottom: 10px;
-    background: #ffe7ea;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fcfcfc;
 }
-  
-/* {
-    background: rgba(244,150,168,0.35);
-    -webkit-backdrop-filter: blur(13px);
-   
-    border: 1px solid rgba(244,150,168,0.175);
-    border-radius: 15px;
-} */
+
+
+
+.active {
+  background-color: white;
+  color: rgb(255, 156, 176);
+}
 
 /* bg-[#FF99AA] */
+.card.image-full:before {
+  opacity: 0.5;
+}
+
+.card.image-full:hover {
+  opacity: 0.95;
+  background-color: black;
+}

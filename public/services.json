@@ -1,0 +1,388 @@
+ [
+    {
+      "id": 1,
+      "service_name": "Wedding Wonders",
+      "themes": [
+        {
+          "theme_name": "Romantic Garden",
+          "theme_price": 850,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Vintage Elegance",
+          "theme_price": 750,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Beach Bliss",
+          "theme_price": 900,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Rustic Charm",
+          "theme_price": 600,
+          "theme_quality": "Basic"
+        },
+        {
+          "theme_name": "Modern Chic",
+          "theme_price": 700,
+          "theme_quality": "Basic"
+        },
+        {
+          "theme_name": "Fairytale Fantasy",
+          "theme_price": 950,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Bohemian Beauty",
+          "theme_price": 800,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Classic Elegance",
+          "theme_price": 850,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Tropical Paradise",
+          "theme_price": 1000,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Enchanted Forest",
+          "theme_price": 700,
+          "theme_quality": "Normal"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/4K42p5b/banner-1.jpg",
+      "price": 650,
+      "service_subtitle": "Creating Magical Wedding Memories",
+      "service_info": "Our Wedding Wonders service is dedicated to making your special day truly magical. Whether you dream of a Romantic Garden wedding, Vintage Elegance, or a Beach Bliss ceremony by the sea, we are here to turn your vision into reality. From the moment you say 'yes' to 'I do,' our team of experienced planners and decorators will be by your side to ensure every detail is perfect. With our range of themes, expert vendors, and attention to every nuance, we take the stress out of wedding planning, allowing you to focus on the joy of your love story. Let us create a wedding that you, your family, and your guests will cherish forever."
+    },
+    {
+      "id": 2,
+      "service_name": "Birthday Bliss",
+      "themes": [
+        {
+          "theme_name": "Superhero Extravaganza",
+          "theme_price": 550,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Princess Party",
+          "theme_price": 650,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Outdoor Adventure",
+          "theme_price": 500,
+          "theme_quality": "Basic"
+        },
+        {
+          "theme_name": "Under the Sea",
+          "theme_price": 700,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Space Odyssey",
+          "theme_price": 750,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Carnival Fun",
+          "theme_price": 600,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Animal Safari",
+          "theme_price": 550,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Dinosaur Delight",
+          "theme_price": 650,
+          "theme_quality": "Basic"
+        },
+        {
+          "theme_name": "Magical Unicorn",
+          "theme_price": 700,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Pirate Adventure",
+          "theme_price": 800,
+          "theme_quality": "Premium"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/0Kyf91y/banner-4.jpg",
+      "price": 450,
+      "service_subtitle": "Celebrate with Joy and Laughter",
+      "service_info": "Birthday Bliss is all about creating unforgettable memories for your loved ones. Choose from a variety of themes, including the Superhero Extravaganza, Princess Party, and Outdoor Adventure, to make your child's birthday extra special. Our team of party planners and entertainers will ensure that every moment is filled with joy and laughter. From themed decorations to interactive games and delicious cakes, we take care of every detail so that you can focus on celebrating with your family and friends. Let us turn your child's birthday into a day of magical bliss that they'll remember for years to come."
+    },
+    {
+      "id": 3,
+      "service_name": "Anniversary Amore",
+      "themes": [
+        {
+          "theme_name": "Romantic Dinner",
+          "theme_price": 750,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Golden Years Gala",
+          "theme_price": 900,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Beachside Romance",
+          "theme_price": 800,
+          "theme_quality": "Normal"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/3sGtN0k/BANNER-7.jpg",
+      "price": 550,
+      "service_subtitle": "Celebrating Love and Togetherness",
+      "service_info": "Anniversary Amore helps you celebrate the milestones of your love story. Whether you envision a Romantic Dinner, a Golden Years Gala, or Beachside Romance, we're here to make your anniversary unforgettable. Our experienced team specializes in creating romantic and memorable moments that reflect your love and journey together. From candlelit dinners to beachfront serenades, we'll handle every detail to ensure your anniversary is a celebration of your unique love story. Let us create an atmosphere of love and togetherness that you'll cherish for a lifetime."
+    },
+    {
+      "id": 4,
+      "service_name": "Engagement Elegance",
+      "themes": [
+        {
+          "theme_name": "Chic Cocktail Party",
+          "theme_price": 700,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Rustic Engagement",
+          "theme_price": 600,
+          "theme_quality": "Basic"
+        },
+        {
+          "theme_name": "Glamorous Evening",
+          "theme_price": 850,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Enchanted Garden",
+          "theme_price": 900,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Seaside Serenade",
+          "theme_price": 750,
+          "theme_quality": "Normal"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/ZXmQpnL/engagement.jpg",
+      "price": 500,
+      "service_subtitle": "Marking the Beginning of Forever",
+      "service_info": "Engagement Elegance sets the stage for your journey to forever. Choose from a range of themes, including the Chic Cocktail Party, Rustic Engagement, and Glamorous Evening, to celebrate this special moment. Our expert event planners will ensure that your engagement is marked by elegance and style. From venue selection and décor to entertainment and catering, we take care of every aspect. Let us make your engagement an unforgettable event that symbolizes the beginning of your lifelong journey together."
+    },
+    {
+      "id": 5,
+      "service_name": "Retirement Celebrations",
+      "themes": [
+        {
+          "theme_name": "Retirement Roast",
+          "theme_price": 600,
+          "theme_quality": "Basic"
+        },
+        {
+          "theme_name": "Travel Dreams Farewell",
+          "theme_price": 950,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Garden of Serenity",
+          "theme_price": 750,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Outdoor Adventure",
+          "theme_price": 700,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Classic Elegance",
+          "theme_price": 850,
+          "theme_quality": "Premium"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/8N7sY5Y/retirement.jpg",
+      "price": 700,
+      "service_subtitle": "Honoring a Lifetime of Achievements",
+      "service_info": "Retirement Celebrations is dedicated to honoring a lifetime of achievements. Whether you're planning a Retirement Roast filled with humor and camaraderie, a Travel Dreams Farewell to mark the beginning of new adventures, or a serene Garden of Serenity event, we'll ensure your retirement celebration is memorable. Our team understands the importance of this transition and will create an event that reflects your unique journey and accomplishments."
+    },
+    {
+      "id": 6,
+      "service_name": "Baby Shower Delights",
+      "themes": [
+        {
+          "theme_name": "Pastel Paradise",
+          "theme_price": 650,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Jungle Adventure",
+          "theme_price": 550,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Twinkle Twinkle Little Star",
+          "theme_price": 750,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Safari Safari",
+          "theme_price": 800,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Under the Sea",
+          "theme_price": 600,
+          "theme_quality": "Normal"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/PG2wRdt/baby.jpg",
+      "price": 450,
+      "service_subtitle": "Welcoming the New Bundle of Joy",
+      "service_info": "Baby Shower Delights specializes in making the arrival of your little one extra special. Whether you choose a Pastel Paradise theme for a soft and whimsical celebration, a Jungle Adventure for a wild and fun experience, or a Twinkle Twinkle Little Star theme for a touch of magic, we're here to help you welcome the new bundle of joy. Our team ensures every detail is perfect so that you can cherish this precious moment with your loved ones."
+    },
+    {
+      "id": 7,
+      "service_name": "Graduation Gala",
+      "themes": [
+        {
+          "theme_name": "Academic Achievements",
+          "theme_price": 800,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Future Bright and Bold",
+          "theme_price": 750,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Diploma and Dreams",
+          "theme_price": 650,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Scholar's Soiree",
+          "theme_price": 700,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Adventure Awaits",
+          "theme_price": 900,
+          "theme_quality": "Premium"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/NTxYWKV/BANNER-8.jpg",
+      "price": 600,
+      "service_subtitle": "Commencement of New Beginnings",
+      "service_info": "Graduation Gala celebrates your academic achievements and marks the commencement of new beginnings. Whether you choose an Academic Achievements theme to honor your scholarly journey, a Future Bright and Bold theme to embrace the exciting road ahead, or a Diploma and Dreams theme to symbolize your aspirations, we're here to make your graduation unforgettable. Our team ensures your accomplishments are celebrated in style and with pride."
+    },
+    {
+      "id": 8,
+      "service_name": "Eid Celebrations",
+      "themes": [
+        {
+          "theme_name": "Eid al-Fitr Feast",
+          "theme_price": 700,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Eid Decor Delights",
+          "theme_price": 950,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Eid Family Reunion",
+          "theme_price": 800,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Festive Lanterns",
+          "theme_price": 750,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Eid Garden Party",
+          "theme_price": 650,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Cultural Elegance",
+          "theme_price": 550,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Mystic Moonlight",
+          "theme_price": 700,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Eid Sweets Delight",
+          "theme_price": 600,
+          "theme_quality": "Basic"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/x6MWHHL/eid.jpg",
+      "price": 500,
+      "service_subtitle": "Joyful Eid Festivities",
+      "service_info": "Eid Celebrations help you celebrate the joy of Eid with your loved ones. Whether you opt for an Eid al-Fitr Feast filled with delicious traditional dishes, Eid Decor Delights to adorn your home in festive splendor, or an Eid Family Reunion to cherish family bonds, we're here to make your Eid festivities joyful and memorable. Let us bring the spirit of togetherness to your celebrations."
+    },
+    {
+      "id": 9,
+      "service_name": "Family Picnic Fun",
+      "themes": [
+        {
+          "theme_name": "Classic Picnic",
+          "theme_price": 550,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Outdoor Games",
+          "theme_price": 450,
+          "theme_quality": "Basic"
+        },
+        {
+          "theme_name": "Picnic Potluck",
+          "theme_price": 700,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Sports Day Picnic",
+          "theme_price": 600,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Hawaiian Luau",
+          "theme_price": 700,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Camping Adventure",
+          "theme_price": 650,
+          "theme_quality": "Normal"
+        },
+        {
+          "theme_name": "Gourmet Picnic",
+          "theme_price": 750,
+          "theme_quality": "Premium"
+        },
+        {
+          "theme_name": "Picnic by the Lake",
+          "theme_price": 550,
+          "theme_quality": "Basic"
+        }
+      ],
+      "cover_img": "https://i.ibb.co/VqJph8f/picnic.jpg",
+      "price": 400,
+      "service_subtitle": "Creating Cherished Family Moments",
+      "service_info": "Family Picnic Fun is all about creating cherished moments with your loved ones. Our classic picnic theme brings everyone together for a day of outdoor fun and relaxation. Enjoy a variety of outdoor games and activities that will have everyone laughing and bonding. To make it even more special, consider a picnic potluck where everyone contributes their favorite dishes for a shared feast. Let us help you create unforgettable family memories amidst nature."
+    }
+  ]
+
