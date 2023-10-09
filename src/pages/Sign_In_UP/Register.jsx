@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import SocialLinks from "../Shared/SocialLogins/SocialLinks";
+import swal from 'sweetalert';
+
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
@@ -39,6 +41,13 @@ const Register = () => {
            
           })
           .catch((error) => console.log(error));
+          swal({
+            title: "Registration Completed",
+            text: "Enjoy Yourself",
+            icon: "success",
+            button: "Close",
+            
+          });
       })
       .catch((error) => {
         setRegisterError(error.message)

@@ -1,9 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-import logo from '../../assets/logo.png'
-
-
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -26,14 +24,19 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink className="text-lg font-medium" to="/about">About Us</NavLink>
+        <NavLink className="text-lg font-medium" to="/about">
+          About Us
+        </NavLink>
       </li>
-      {
-        user && <>
-        <li>
-        <NavLink className="text-lg font-medium" to="/gallery">Gallery</NavLink>
-      </li></>
-      }
+      {user && (
+        <>
+          <li>
+            <NavLink className="text-lg font-medium" to="/gallery">
+              Gallery
+            </NavLink>
+          </li>
+        </>
+      )}
     </>
   );
   return (
@@ -78,17 +81,32 @@ const Navbar = () => {
         <div className="navbar-end">
           {user ? (
             <div className="flex gap-1 justify-center items-center">
-              <img
-                className="w-14 h-14 rounded-full border-2 border-black"
-                src={user.photoURL}
-                alt="user profile pic"
-              />
-              <button
+              <div className="dropdown dropdown-end">
+                <label tabIndex={0} className=" m-1">
+                  <img
+                    className="w-14 h-14 rounded-full border-2 border-black"
+                    src={user.photoURL}
+                    alt="user profile pic"
+                  />
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[2] menu p-1 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li>
+                    <h1 className="text-left  font-semibold">Name:{user.displayName} </h1>
+                  </li>
+                  <li>
+                  <button
                 onClick={handleLogOut}
-                className="btn bg-[#f96e85] hover:bg-[#f96e85]   text-white font-semibold normal-case"
+                className="btn bg-[#f96e85] hover:bg-[#f96e85] w-2/3  pt-4 mx-auto text-center  text-white font-semibold normal-case"
               >
                 Log Out
               </button>
+                  </li>
+                </ul>
+              </div>
+              
             </div>
           ) : (
             <Link

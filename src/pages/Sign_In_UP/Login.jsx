@@ -2,11 +2,12 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import SocialLinks from "../Shared/SocialLogins/SocialLinks";
-
+import swal from 'sweetalert';
 
 const Login = () => {
   const { loggedIn } = useContext(AuthContext);
   const [signInError, setSignInError] = useState("");
+
   const navigate = useNavigate()
 
   const handleSignIn = (e) => {
@@ -21,6 +22,13 @@ const Login = () => {
     loggedIn(email, password)
       .then((result) => {
         console.log(result.user);
+        swal({
+          title: "Login Successful",
+          text: "Enjoy Yourself",
+          icon: "success",
+          button: "Close",
+          
+        });
         e.target.reset();
         navigate("/")
       })

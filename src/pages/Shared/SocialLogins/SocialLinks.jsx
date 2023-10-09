@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import swal from 'sweetalert';
 
 const SocialLinks = () => {
     const {googleSignIn,githubSignIn} = useContext(AuthContext);
@@ -9,7 +10,14 @@ const SocialLinks = () => {
     const handleGoogleLogin = () =>{
         googleSignIn()
         .then(result =>{
-            console.log(result.error);
+          console.log(result.user);
+          swal({
+            title: "Successfully Donated",
+            text: "Thanks for the donation!",
+            icon: "success",
+            button: "Close",
+            
+          });
         }).catch(error =>{
             console.error(error);
         })
@@ -18,7 +26,14 @@ const SocialLinks = () => {
     const handleGithubLogin = () =>{
         githubSignIn()
         .then(result =>{
-            console.log(result.error);
+          console.log(result.user);
+          swal({
+            title: "Login Successful",
+            text: "Enjoy Yourself",
+            icon: "success",
+            button: "Close",
+            
+          });
         }).catch(error =>{
             console.error(error);
         })
