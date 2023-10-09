@@ -1,8 +1,20 @@
-# React + Vite
+# Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- # Private route:
+there is 3 private route where user can not go withou log in to web site.
 
-Currently, two official plugins are available:
+- # Gallery:
+user can show our gallery section and explore the events, that how a event can apear
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- # Navbar
+when a user logged in, their pic, and name will be showen at navbar
+
+- # meet out team:
+user can directly recognized with out team, so that they can know ourself and trust us
+
+- # responsive:
+build responsive , so that it can become more user friendly
+
+
+
+
