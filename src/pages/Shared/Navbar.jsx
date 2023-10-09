@@ -21,16 +21,19 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink className="" to="/">
+        <NavLink className="text-lg font-medium" to="/">
           Home
         </NavLink>
       </li>
       <li>
-        <NavLink to="/about">About Us</NavLink>
+        <NavLink className="text-lg font-medium" to="/about">About Us</NavLink>
       </li>
-      <li>
-        <NavLink to="/gallery">Gallery</NavLink>
-      </li>
+      {
+        user && <>
+        <li>
+        <NavLink className="text-lg font-medium" to="/gallery">Gallery</NavLink>
+      </li></>
+      }
     </>
   );
   return (

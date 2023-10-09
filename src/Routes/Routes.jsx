@@ -6,12 +6,14 @@ import Register from "../pages/Sign_In_UP/Register";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import Gallery from "../pages/Gallery/Gallery";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
         {
             path:'/',

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import SocialLinks from "../Shared/SocialLogins/SocialLinks";
 
@@ -7,6 +7,7 @@ import SocialLinks from "../Shared/SocialLogins/SocialLinks";
 const Login = () => {
   const { loggedIn } = useContext(AuthContext);
   const [signInError, setSignInError] = useState("");
+  const navigate = useNavigate()
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -20,7 +21,8 @@ const Login = () => {
     loggedIn(email, password)
       .then((result) => {
         console.log(result.user);
-       
+        e.target.reset();
+        navigate("/")
       })
       .catch((error) => {
         console.log(error);
@@ -28,8 +30,7 @@ const Login = () => {
           "Wrong Email or password. Please recheck your information."
         );
       });
-      e.target.email.value = ''
-      e.target.password.value = ''
+    
   };
 
   return (

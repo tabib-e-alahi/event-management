@@ -13,9 +13,11 @@ body{
 
 
 
-.active {
-  background-color: white;
-  color: rgb(255, 156, 176);
+li .active{
+ background-color: white!important;
+  color: rgb(237, 122, 145)!important;
+  font-weight: 600!important;
+  font-size: 20px!important;
 }
 
 /* bg-[#FF99AA] */
