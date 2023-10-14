@@ -29,3 +29,10 @@ li .active{
   opacity: 0.95;
   background-color: black;
 }
+
+.my-class .hero-overlay {
+  
+  background-color: #2b2d2e;
+  opacity: 0.6;
+ 
+}

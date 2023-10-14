@@ -59,9 +59,7 @@ const Footer = () => {
                 <img className="w-2/3" src={logo} alt="" />
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                where you find you visions are made info reality.
               </p>
             </div>
 

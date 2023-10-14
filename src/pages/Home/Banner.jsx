@@ -10,9 +10,25 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Banner = () => {
+  const images = [
+    { img: "https://i.ibb.co/4K42p5b/banner-1.jpg" },
+    { img: "https://i.ibb.co/gTKZzmy/banner-2.jpg" },
+    { img: "https://i.ibb.co/pnKKHJ7/banner-6.jpg" },
+    { img: "https://i.ibb.co/3sGtN0k/BANNER-7.jpg" },
+    { img: "https://i.ibb.co/NTxYWKV/BANNER-8.jpg" },
+    { img: "https://i.ibb.co/bzfQyKS/BANNER-9.jpg" },
+    { img: "https://i.ibb.co/4fzbz2G/banner-3.jpg" },
+    { img: "https://i.ibb.co/0Kyf91y/banner-4.jpg" },
+    { img: "https://i.ibb.co/2WPX0Y3/banner-5.jpg" }
+  ];
+  
+ 
+  
+
+
+
   return (
-    <div className="mb-20  md:w-full">
-      
+    <div className="mb-20  md:w-11/12 mt-4 mx-auto">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -25,225 +41,38 @@ const Banner = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper rounded-3xl"
       >
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px]  "
-              src="https://i.ibb.co/pnKKHJ7/banner-6.jpg"
-              alt="slide-1"
-            />
-            <div className="hidden lg:flex w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-medium  text-white">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-xl lg:text-9xl font-semibold lg:font-bold">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
+
+        {
+          images.map((image,idx) => <SwiperSlide key={idx} className="rounded-2xl">
+          <div
+              className="hero h-60 lg:min-h-screen my-class "
+              style={{
+                backgroundImage:
+                  `url(${image.img})`,
+              }}
+            >
+              <div className="lg:hero-overlay bg-opacity-60"></div>
+              <div className="hero-content text-center text-neutral-content">
+                <div className="hidden lg:flex flex-col max-w-xl">
+                  <h1 className="mb-5 text-2xl font-bold text-left">Things we do <br /> <span className="text-[#fcb900] text-7xl text-center">For Love</span></h1>
+                  <p className="mb-5 font-medium text-left">
+                  Streamline your event planning experience in our bustling city with our expert team.  From weddings to birthdays and beyond, we make every occasion unforgettable amidst the urban hustle and bustle.
+                  </p>
+                 
+                </div>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px] mix-blend-overlay"
-              src="https://i.ibb.co/3sGtN0k/BANNER-7.jpg"
-              alt="slide-2"
-            />
-            <div className="hidden lg:flex flex-col w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-semibold  text-white">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-9xl font-bold">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px] mix-blend-overlay"
-              src="https://i.ibb.co/NTxYWKV/BANNER-8.jpg"
-              alt="slide-3"
-            />
-            <div className="hidden lg:flex flex-col w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-semibold  text-white">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-9xl font-bold">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px] mix-blend-overlay"
-              src="https://i.ibb.co/bzfQyKS/BANNER-9.jpg"
-              alt="slide-4"
-            />
-            <div className="hidden lg:flex flex-col w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-semibold  text-white">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-9xl font-bold">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px] mix-blend-overlay"
-              src="https://i.ibb.co/4K42p5b/banner-1.jpg"
-              alt="slide-5"
-            />
-            <div className="hidden lg:flex flex-col w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-semibold  text-white">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-9xl font-bold">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px] mix-blend-overlay"
-              src="https://i.ibb.co/gTKZzmy/banner-2.jpg"
-              alt="slide-6"
-            />
-            <div className="hidden lg:flex flex-col   w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col  absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-semibold  text-white">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-9xl font-bold">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px] mix-blend-overlay"
-              src="https://i.ibb.co/4fzbz2G/banner-3.jpg"
-              alt="slide-7"
-            />
-            <div className="hidden lg:flex flex-col w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-semibold  text-white">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-9xl font-bold">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px] mix-blend-overlay"
-              src="https://i.ibb.co/0Kyf91y/banner-4.jpg"
-              alt="slide-8"
-            />
-            <div className="hidden lg:flex flex-col w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-semibold  text-white">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-9xl font-bold">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative">
-            <img
-              className="w-auto lg:w-full h-auto lg:h-[700px] mix-blend-overlay"
-              src="https://i.ibb.co/2WPX0Y3/banner-5.jpg"
-              alt="slide-9"
-            />
-            <div className="hidden lg:flex flex-col w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
-            <div className="hidden lg:flex flex-col absolute top-1/3 left-1/3">
-              <h1 className="text-4xl font-semibold  text-white mb-5">
-                Things We Do <br />{" "}
-                <span className="text-[#fcb900] text-9xl font-bold ">
-                  For Love
-                </span>
-              </h1>
-              <p className="text-white text-left font-medium">
-                Streamline your event planning experience in our bustling city
-                with our expert team. <br /> From weddings to birthdays and
-                beyond, we make every occasion unforgettable amidst <br /> the
-                urban hustle and bustle.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>)
+        }
+      
+       
+       
+       
+        
       </Swiper>
+     
     </div>
   );
 };

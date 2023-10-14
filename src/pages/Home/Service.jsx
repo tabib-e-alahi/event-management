@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init()
 
 const Service = ({ service }) => {
   // console.log(service);
@@ -8,7 +11,7 @@ const {id,service_name,cover_img,service_subtitle} = service;
 
 
   return (
-    <div className="card  shadow-xl image-full">
+    <div data-aos="zoom-in" className="card  shadow-xl image-full">
       <figure className="h-[280px]">
         <img className="h-full w-full"
           src={cover_img}

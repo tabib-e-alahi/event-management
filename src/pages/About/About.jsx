@@ -1,10 +1,16 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const About = () => {
   return (
     <div>
       <section className="flex items-center bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
         <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
           <div className="flex flex-wrap ">
-            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+            <div data-aos="fade-right" data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
               <div className="relative lg:max-w-md">
                 <img
                   src="https://i.ibb.co/4K42p5b/banner-1.jpg"
@@ -26,7 +32,9 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full px-6 mb-10 lg:w-1/2 lg:mb-0 ">
+
+            <div data-aos="fade-left" data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="w-full px-6 mb-10 lg:w-1/2 lg:mb-0 ">
               <div className="pl-4 mb-6 border-l-4 border-blue-500 ">
                 <span className="text-sm text-gray-600 uppercase dark:text-gray-400">
                   Who we are?

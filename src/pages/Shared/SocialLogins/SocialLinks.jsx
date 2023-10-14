@@ -12,8 +12,8 @@ const SocialLinks = () => {
         .then(result =>{
           console.log(result.user);
           swal({
-            title: "Successfully Donated",
-            text: "Thanks for the donation!",
+            title: "Login Successful",
+            text: "Enjoy Yourself",
             icon: "success",
             button: "Close",
             
