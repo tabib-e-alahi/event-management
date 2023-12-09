@@ -1,19 +1,21 @@
-# Features
+#### live link:https://event-management-assignment-9.web.app
 
-- # Private route:
-there is 3 private route where user can not go withou log in to web site.
+### Features
 
-- # Gallery:
-user can show our gallery section and explore the events, that how a event can apear
+-  Private route:
+there is 3 private route where the user can not go without logging in to the website.
 
-- # Navbar
-when a user logged in, their pic, and name will be showen at navbar
+-  Gallery:
+user can show our gallery section and explore the events, and how an event can appear
 
-- # meet out team:
-user can directly recognized with out team, so that they can know ourself and trust us
+-  Navbar
+when a user logs in, their pic, and name will be shown at the navbar
 
-- # responsive:
-build responsive , so that it can become more user friendly
+-  Meet our team:
+user can directly recognize without team so that they can know us and trust us
+
+-  responsive:
+build responsive, so that it can become more user-friendly
 
 
 
